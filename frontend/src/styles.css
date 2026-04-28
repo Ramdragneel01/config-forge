@@ -1,0 +1,219 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #0e1d2f;
+  background: linear-gradient(180deg, #f3f7fb 0%, #e8eef5 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 20% 20%, #ffffff 0%, #ebf2f9 40%, #e1e9f2 100%);
+  min-height: 100vh;
+}
+
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  gap: 18px;
+}
+
+.hero {
+  border: 1px solid #c4d3e3;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px 20px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin: 8px 0 0;
+  color: #324b67;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.metric-tile {
+  border: 1px solid #c7d6e8;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 12px;
+}
+
+.metric-tile h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #27415d;
+}
+
+.metric-value {
+  margin: 8px 0 4px;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.metric-subtitle {
+  margin: 0;
+  color: #4d647d;
+  font-size: 0.86rem;
+}
+
+.panel {
+  border: 1px solid #c4d3e3;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 16px;
+}
+
+.panel h2 {
+  margin-top: 0;
+  font-size: 1.35rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+  color: #1f3a56;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #b9cce0;
+  border-radius: 8px;
+  padding: 9px 10px;
+  background: #fbfdff;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+button {
+  background: linear-gradient(90deg, #005f8f, #0076ad);
+  color: #ffffff;
+  border: none;
+  border-radius: 9px;
+  padding: 9px 14px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.button-row {
+  margin-bottom: 10px;
+}
+
+.validation-box {
+  border: 1px solid #cbd9ea;
+  border-radius: 10px;
+  background: #f7fbff;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.validation-box h3 {
+  margin-top: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  border-bottom: 1px solid #d8e3ef;
+  padding: 9px 7px;
+  font-size: 0.95rem;
+}
+
+.status-badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.status-draft {
+  background: #e8eef5;
+  color: #35516e;
+}
+
+.status-validated {
+  background: #dbf5e5;
+  color: #1d673b;
+}
+
+.status-rejected {
+  background: #ffe1dd;
+  color: #9a2a1f;
+}
+
+.status-promoted {
+  background: #d9f0ff;
+  color: #0a4f77;
+}
+
+.status-strip {
+  border: 1px solid #c4d3e3;
+  border-radius: 10px;
+  background: #f8fbff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.error-text {
+  color: #9b1f13;
+}
+
+@media (max-width: 700px) {
+  .app-shell {
+    padding: 14px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .status-strip {
+    flex-direction: column;
+  }
+}
