@@ -13,3 +13,18 @@ Describe the change and rationale.
 - [ ] Policy validation behavior is documented
 - [ ] Promotion guardrails are enforced
 - [ ] Operational docs updated for changed behavior
+
+
+## What changed
+-
+
+## Why this change
+-
+
+## Validation
+- [ ] Local checks passed
+- [ ] Tests added or updated when behavior changed
+
+## Risk and rollout
+- Risk level:
+- Rollback plan:
